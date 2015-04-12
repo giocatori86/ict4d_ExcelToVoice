@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <vxml version = "2.1" >
  <menu id="menu1" dtmf="true">
-<prompt>Select on of the following markets Amsterdam Utrecht Hilversum Amstelveen Den Haag Eindhoven deventer hardenberg hoog caterijnen new york </prompt>
+<prompt>Select on of the following markets
+ <break size="medium"/>
+1.Amsterdam
+<break size="medium"/>
+2.Utrecht
+<break size="medium"/>
+3.Hilversum
+<break size="medium"/>
+4.Amstelveen
+<break size="medium"/>
+5.Den Haag
+<break size="medium"/>
+6.Eindhoven
+<break size="medium"/>
+7.deventer
+<break size="medium"/>
+8.hardenberg
+<break size="medium"/>
+9.hoog caterijnen
+<break size="medium"/>
+10.new york
+<break size="medium"/>
+</prompt>
 <choice next="#Amsterdam"/>
 <choice next="#Utrecht"/>
 <choice next="#Hilversum"/>
@@ -16,7 +38,17 @@
 
 <menu id="Amsterdam" dtmf="true">
 <prompt>
-Select between Tomatoes Beans Soja Papaver 
+Select between
+<break size="medium"/>
+1.Tomatoes
+<break size="medium"/>
+2.Beans
+<break size="medium"/>
+3.Soja
+<break size="medium"/>
+4.Papaver
+<break size="medium"/>
+
 </prompt>
 <choice next="#Amsterdam_Tomatoes"/>
 <choice next="#Amsterdam_Beans"/>
@@ -28,7 +60,9 @@ Select between Tomatoes Beans Soja Papaver
  <block>
 <prompt>
 The price of Tomatoes is today 2 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -36,7 +70,9 @@ The price of Tomatoes is today 2 CEDI
  <block>
 <prompt>
 The price of Beans is today 3 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -44,7 +80,9 @@ The price of Beans is today 3 CEDI
  <block>
 <prompt>
 The price of Soja is today 8 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -52,13 +90,25 @@ The price of Soja is today 8 CEDI
  <block>
 <prompt>
 The price of Papaver is today 1 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
 <menu id="Utrecht" dtmf="true">
 <prompt>
-Select between Tomatoes Beans Soja Papaver 
+Select between
+<break size="medium"/>
+1.Tomatoes
+<break size="medium"/>
+2.Beans
+<break size="medium"/>
+3.Soja
+<break size="medium"/>
+4.Papaver
+<break size="medium"/>
+
 </prompt>
 <choice next="#Utrecht_Tomatoes"/>
 <choice next="#Utrecht_Beans"/>
@@ -70,7 +120,9 @@ Select between Tomatoes Beans Soja Papaver
  <block>
 <prompt>
 The price of Tomatoes is today 3 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -78,7 +130,9 @@ The price of Tomatoes is today 3 CEDI
  <block>
 <prompt>
 The price of Beans is today 4 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -86,7 +140,9 @@ The price of Beans is today 4 CEDI
  <block>
 <prompt>
 The price of Soja is today 6 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -94,13 +150,25 @@ The price of Soja is today 6 CEDI
  <block>
 <prompt>
 The price of Papaver is today 3 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
 <menu id="Hilversum" dtmf="true">
 <prompt>
-Select between Tomatoes Beans Soja Papaver 
+Select between
+<break size="medium"/>
+1.Tomatoes
+<break size="medium"/>
+2.Beans
+<break size="medium"/>
+3.Soja
+<break size="medium"/>
+4.Papaver
+<break size="medium"/>
+
 </prompt>
 <choice next="#Hilversum_Tomatoes"/>
 <choice next="#Hilversum_Beans"/>
@@ -112,7 +180,9 @@ Select between Tomatoes Beans Soja Papaver
  <block>
 <prompt>
 The price of Tomatoes is today 4 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -120,7 +190,9 @@ The price of Tomatoes is today 4 CEDI
  <block>
 <prompt>
 The price of Beans is today 5 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -128,7 +200,9 @@ The price of Beans is today 5 CEDI
  <block>
 <prompt>
 The price of Soja is today 5 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -136,13 +210,25 @@ The price of Soja is today 5 CEDI
  <block>
 <prompt>
 The price of Papaver is today 4 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
 <menu id="Amstelveen" dtmf="true">
 <prompt>
-Select between Tomatoes Beans Soja Papaver 
+Select between
+<break size="medium"/>
+1.Tomatoes
+<break size="medium"/>
+2.Beans
+<break size="medium"/>
+3.Soja
+<break size="medium"/>
+4.Papaver
+<break size="medium"/>
+
 </prompt>
 <choice next="#Amstelveen_Tomatoes"/>
 <choice next="#Amstelveen_Beans"/>
@@ -154,7 +240,9 @@ Select between Tomatoes Beans Soja Papaver
  <block>
 <prompt>
 The price of Tomatoes is today 5 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -162,7 +250,9 @@ The price of Tomatoes is today 5 CEDI
  <block>
 <prompt>
 The price of Beans is today 6 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -170,7 +260,9 @@ The price of Beans is today 6 CEDI
  <block>
 <prompt>
 The price of Soja is today 4 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -178,13 +270,25 @@ The price of Soja is today 4 CEDI
  <block>
 <prompt>
 The price of Papaver is today 5 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
 <menu id="Den Haag" dtmf="true">
 <prompt>
-Select between Tomatoes Beans Soja Papaver 
+Select between
+<break size="medium"/>
+1.Tomatoes
+<break size="medium"/>
+2.Beans
+<break size="medium"/>
+3.Soja
+<break size="medium"/>
+4.Papaver
+<break size="medium"/>
+
 </prompt>
 <choice next="#Den Haag_Tomatoes"/>
 <choice next="#Den Haag_Beans"/>
@@ -196,7 +300,9 @@ Select between Tomatoes Beans Soja Papaver
  <block>
 <prompt>
 The price of Tomatoes is today 3 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -204,7 +310,9 @@ The price of Tomatoes is today 3 CEDI
  <block>
 <prompt>
 The price of Beans is today 2 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -212,7 +320,9 @@ The price of Beans is today 2 CEDI
  <block>
 <prompt>
 The price of Soja is today 6 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -220,13 +330,25 @@ The price of Soja is today 6 CEDI
  <block>
 <prompt>
 The price of Papaver is today 8 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
 <menu id="Eindhoven" dtmf="true">
 <prompt>
-Select between Tomatoes Beans Soja Papaver 
+Select between
+<break size="medium"/>
+1.Tomatoes
+<break size="medium"/>
+2.Beans
+<break size="medium"/>
+3.Soja
+<break size="medium"/>
+4.Papaver
+<break size="medium"/>
+
 </prompt>
 <choice next="#Eindhoven_Tomatoes"/>
 <choice next="#Eindhoven_Beans"/>
@@ -238,7 +360,9 @@ Select between Tomatoes Beans Soja Papaver
  <block>
 <prompt>
 The price of Tomatoes is today 4 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -246,7 +370,9 @@ The price of Tomatoes is today 4 CEDI
  <block>
 <prompt>
 The price of Beans is today 2 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -254,7 +380,9 @@ The price of Beans is today 2 CEDI
  <block>
 <prompt>
 The price of Soja is today 3 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -262,13 +390,25 @@ The price of Soja is today 3 CEDI
  <block>
 <prompt>
 The price of Papaver is today 9 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
 <menu id="deventer" dtmf="true">
 <prompt>
-Select between Tomatoes Beans Soja Papaver 
+Select between
+<break size="medium"/>
+1.Tomatoes
+<break size="medium"/>
+2.Beans
+<break size="medium"/>
+3.Soja
+<break size="medium"/>
+4.Papaver
+<break size="medium"/>
+
 </prompt>
 <choice next="#deventer_Tomatoes"/>
 <choice next="#deventer_Beans"/>
@@ -280,7 +420,9 @@ Select between Tomatoes Beans Soja Papaver
  <block>
 <prompt>
 The price of Tomatoes is today 1 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -288,7 +430,9 @@ The price of Tomatoes is today 1 CEDI
  <block>
 <prompt>
 The price of Beans is today 2 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -296,7 +440,9 @@ The price of Beans is today 2 CEDI
  <block>
 <prompt>
 The price of Soja is today 78 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -304,13 +450,25 @@ The price of Soja is today 78 CEDI
  <block>
 <prompt>
 The price of Papaver is today 1 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
 <menu id="hardenberg" dtmf="true">
 <prompt>
-Select between Tomatoes Beans Soja Papaver 
+Select between
+<break size="medium"/>
+1.Tomatoes
+<break size="medium"/>
+2.Beans
+<break size="medium"/>
+3.Soja
+<break size="medium"/>
+4.Papaver
+<break size="medium"/>
+
 </prompt>
 <choice next="#hardenberg_Tomatoes"/>
 <choice next="#hardenberg_Beans"/>
@@ -322,7 +480,9 @@ Select between Tomatoes Beans Soja Papaver
  <block>
 <prompt>
 The price of Tomatoes is today 2 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -330,7 +490,9 @@ The price of Tomatoes is today 2 CEDI
  <block>
 <prompt>
 The price of Beans is today 4 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -338,7 +500,9 @@ The price of Beans is today 4 CEDI
  <block>
 <prompt>
 The price of Soja is today 6 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -346,13 +510,25 @@ The price of Soja is today 6 CEDI
  <block>
 <prompt>
 The price of Papaver is today 4 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
 <menu id="hoog caterijnen" dtmf="true">
 <prompt>
-Select between Tomatoes Beans Soja Papaver 
+Select between
+<break size="medium"/>
+1.Tomatoes
+<break size="medium"/>
+2.Beans
+<break size="medium"/>
+3.Soja
+<break size="medium"/>
+4.Papaver
+<break size="medium"/>
+
 </prompt>
 <choice next="#hoog caterijnen_Tomatoes"/>
 <choice next="#hoog caterijnen_Beans"/>
@@ -364,7 +540,9 @@ Select between Tomatoes Beans Soja Papaver
  <block>
 <prompt>
 The price of Tomatoes is today 2 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -372,7 +550,9 @@ The price of Tomatoes is today 2 CEDI
  <block>
 <prompt>
 The price of Beans is today 5 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -380,7 +560,9 @@ The price of Beans is today 5 CEDI
  <block>
 <prompt>
 The price of Soja is today 6 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -388,13 +570,25 @@ The price of Soja is today 6 CEDI
  <block>
 <prompt>
 The price of Papaver is today 1 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
 <menu id="new york" dtmf="true">
 <prompt>
-Select between Tomatoes Beans Soja Papaver 
+Select between
+<break size="medium"/>
+1.Tomatoes
+<break size="medium"/>
+2.Beans
+<break size="medium"/>
+3.Soja
+<break size="medium"/>
+4.Papaver
+<break size="medium"/>
+
 </prompt>
 <choice next="#new york_Tomatoes"/>
 <choice next="#new york_Beans"/>
@@ -406,7 +600,9 @@ Select between Tomatoes Beans Soja Papaver
  <block>
 <prompt>
 The price of Tomatoes is today 1 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -414,7 +610,9 @@ The price of Tomatoes is today 1 CEDI
  <block>
 <prompt>
 The price of Beans is today 3 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -422,7 +620,9 @@ The price of Beans is today 3 CEDI
  <block>
 <prompt>
 The price of Soja is today 6 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
@@ -430,7 +630,9 @@ The price of Soja is today 6 CEDI
  <block>
 <prompt>
 The price of Papaver is today 5 CEDI 
+<break size="medium"/>
 </prompt>
+<goto next="#menu1"/>
 </block>
 </form>
 
