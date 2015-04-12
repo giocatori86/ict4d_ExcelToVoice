@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <vxml version = "2.1" >
  <menu id="menu1" dtmf="true">
-<prompt>Give in your given code </prompt>
+<prompt>Select on of the following markets Amsterdam Utrecht Hilversum Amstelveen Den Haag Eindhoven deventer hardenberg hoog caterijnen new york </prompt>
 <choice next="#Amsterdam"/>
 <choice next="#Utrecht"/>
 <choice next="#Hilversum"/>
@@ -14,395 +14,425 @@
 <choice next="#new york"/>
 </menu>
 
-<form id="Amsterdam">
-<block> 
-<menu id="products_Amsterdam" dtmf="true">
+<menu id="Amsterdam" dtmf="true">
+<prompt>
+Select between Tomatoes Beans Soja Papaver 
+</prompt>
 <choice next="#Amsterdam_Tomatoes"/>
 <choice next="#Amsterdam_Beans"/>
 <choice next="#Amsterdam_Soja"/>
 <choice next="#Amsterdam_Papaver"/>
 </menu>
-</block> 
-</form>
-
 
 <form id="Amsterdam_Tomatoes"> 
  <block>
 <prompt>
-The price of Tomatoes is today 2 schepjes</prompt>
+The price of Tomatoes is today 2 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="Amsterdam_Beans"> 
  <block>
 <prompt>
-The price of Beans is today 3 schepjes</prompt>
+The price of Beans is today 3 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="Amsterdam_Soja"> 
  <block>
 <prompt>
-The price of Soja is today 8 schepjes</prompt>
+The price of Soja is today 8 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="Amsterdam_Papaver"> 
  <block>
 <prompt>
-The price of Papaver is today 1 schepjes</prompt>
+The price of Papaver is today 1 CEDI 
+</prompt>
 </block>
 </form>
-<form id="Utrecht">
-<block> 
-<menu id="products_Utrecht" dtmf="true">
+
+<menu id="Utrecht" dtmf="true">
+<prompt>
+Select between Tomatoes Beans Soja Papaver 
+</prompt>
 <choice next="#Utrecht_Tomatoes"/>
 <choice next="#Utrecht_Beans"/>
 <choice next="#Utrecht_Soja"/>
 <choice next="#Utrecht_Papaver"/>
 </menu>
-</block> 
-</form>
-
 
 <form id="Utrecht_Tomatoes"> 
  <block>
 <prompt>
-The price of Tomatoes is today 3 schepjes</prompt>
+The price of Tomatoes is today 3 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="Utrecht_Beans"> 
  <block>
 <prompt>
-The price of Beans is today 4 schepjes</prompt>
+The price of Beans is today 4 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="Utrecht_Soja"> 
  <block>
 <prompt>
-The price of Soja is today 6 schepjes</prompt>
+The price of Soja is today 6 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="Utrecht_Papaver"> 
  <block>
 <prompt>
-The price of Papaver is today 3 schepjes</prompt>
+The price of Papaver is today 3 CEDI 
+</prompt>
 </block>
 </form>
-<form id="Hilversum">
-<block> 
-<menu id="products_Hilversum" dtmf="true">
+
+<menu id="Hilversum" dtmf="true">
+<prompt>
+Select between Tomatoes Beans Soja Papaver 
+</prompt>
 <choice next="#Hilversum_Tomatoes"/>
 <choice next="#Hilversum_Beans"/>
 <choice next="#Hilversum_Soja"/>
 <choice next="#Hilversum_Papaver"/>
 </menu>
-</block> 
-</form>
-
 
 <form id="Hilversum_Tomatoes"> 
  <block>
 <prompt>
-The price of Tomatoes is today 4 schepjes</prompt>
+The price of Tomatoes is today 4 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="Hilversum_Beans"> 
  <block>
 <prompt>
-The price of Beans is today 5 schepjes</prompt>
+The price of Beans is today 5 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="Hilversum_Soja"> 
  <block>
 <prompt>
-The price of Soja is today 5 schepjes</prompt>
+The price of Soja is today 5 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="Hilversum_Papaver"> 
  <block>
 <prompt>
-The price of Papaver is today 4 schepjes</prompt>
+The price of Papaver is today 4 CEDI 
+</prompt>
 </block>
 </form>
-<form id="Amstelveen">
-<block> 
-<menu id="products_Amstelveen" dtmf="true">
+
+<menu id="Amstelveen" dtmf="true">
+<prompt>
+Select between Tomatoes Beans Soja Papaver 
+</prompt>
 <choice next="#Amstelveen_Tomatoes"/>
 <choice next="#Amstelveen_Beans"/>
 <choice next="#Amstelveen_Soja"/>
 <choice next="#Amstelveen_Papaver"/>
 </menu>
-</block> 
-</form>
-
 
 <form id="Amstelveen_Tomatoes"> 
  <block>
 <prompt>
-The price of Tomatoes is today 5 schepjes</prompt>
+The price of Tomatoes is today 5 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="Amstelveen_Beans"> 
  <block>
 <prompt>
-The price of Beans is today 6 schepjes</prompt>
+The price of Beans is today 6 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="Amstelveen_Soja"> 
  <block>
 <prompt>
-The price of Soja is today 4 schepjes</prompt>
+The price of Soja is today 4 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="Amstelveen_Papaver"> 
  <block>
 <prompt>
-The price of Papaver is today 5 schepjes</prompt>
+The price of Papaver is today 5 CEDI 
+</prompt>
 </block>
 </form>
-<form id="Den Haag">
-<block> 
-<menu id="products_Den Haag" dtmf="true">
+
+<menu id="Den Haag" dtmf="true">
+<prompt>
+Select between Tomatoes Beans Soja Papaver 
+</prompt>
 <choice next="#Den Haag_Tomatoes"/>
 <choice next="#Den Haag_Beans"/>
 <choice next="#Den Haag_Soja"/>
 <choice next="#Den Haag_Papaver"/>
 </menu>
-</block> 
-</form>
-
 
 <form id="Den Haag_Tomatoes"> 
  <block>
 <prompt>
-The price of Tomatoes is today 3 schepjes</prompt>
+The price of Tomatoes is today 3 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="Den Haag_Beans"> 
  <block>
 <prompt>
-The price of Beans is today 2 schepjes</prompt>
+The price of Beans is today 2 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="Den Haag_Soja"> 
  <block>
 <prompt>
-The price of Soja is today 6 schepjes</prompt>
+The price of Soja is today 6 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="Den Haag_Papaver"> 
  <block>
 <prompt>
-The price of Papaver is today 8 schepjes</prompt>
+The price of Papaver is today 8 CEDI 
+</prompt>
 </block>
 </form>
-<form id="Eindhoven">
-<block> 
-<menu id="products_Eindhoven" dtmf="true">
+
+<menu id="Eindhoven" dtmf="true">
+<prompt>
+Select between Tomatoes Beans Soja Papaver 
+</prompt>
 <choice next="#Eindhoven_Tomatoes"/>
 <choice next="#Eindhoven_Beans"/>
 <choice next="#Eindhoven_Soja"/>
 <choice next="#Eindhoven_Papaver"/>
 </menu>
-</block> 
-</form>
-
 
 <form id="Eindhoven_Tomatoes"> 
  <block>
 <prompt>
-The price of Tomatoes is today 4 schepjes</prompt>
+The price of Tomatoes is today 4 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="Eindhoven_Beans"> 
  <block>
 <prompt>
-The price of Beans is today 2 schepjes</prompt>
+The price of Beans is today 2 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="Eindhoven_Soja"> 
  <block>
 <prompt>
-The price of Soja is today 3 schepjes</prompt>
+The price of Soja is today 3 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="Eindhoven_Papaver"> 
  <block>
 <prompt>
-The price of Papaver is today 9 schepjes</prompt>
+The price of Papaver is today 9 CEDI 
+</prompt>
 </block>
 </form>
-<form id="deventer">
-<block> 
-<menu id="products_deventer" dtmf="true">
+
+<menu id="deventer" dtmf="true">
+<prompt>
+Select between Tomatoes Beans Soja Papaver 
+</prompt>
 <choice next="#deventer_Tomatoes"/>
 <choice next="#deventer_Beans"/>
 <choice next="#deventer_Soja"/>
 <choice next="#deventer_Papaver"/>
 </menu>
-</block> 
-</form>
-
 
 <form id="deventer_Tomatoes"> 
  <block>
 <prompt>
-The price of Tomatoes is today 1 schepjes</prompt>
+The price of Tomatoes is today 1 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="deventer_Beans"> 
  <block>
 <prompt>
-The price of Beans is today 2 schepjes</prompt>
+The price of Beans is today 2 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="deventer_Soja"> 
  <block>
 <prompt>
-The price of Soja is today 78 schepjes</prompt>
+The price of Soja is today 78 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="deventer_Papaver"> 
  <block>
 <prompt>
-The price of Papaver is today 1 schepjes</prompt>
+The price of Papaver is today 1 CEDI 
+</prompt>
 </block>
 </form>
-<form id="hardenberg">
-<block> 
-<menu id="products_hardenberg" dtmf="true">
+
+<menu id="hardenberg" dtmf="true">
+<prompt>
+Select between Tomatoes Beans Soja Papaver 
+</prompt>
 <choice next="#hardenberg_Tomatoes"/>
 <choice next="#hardenberg_Beans"/>
 <choice next="#hardenberg_Soja"/>
 <choice next="#hardenberg_Papaver"/>
 </menu>
-</block> 
-</form>
-
 
 <form id="hardenberg_Tomatoes"> 
  <block>
 <prompt>
-The price of Tomatoes is today 2 schepjes</prompt>
+The price of Tomatoes is today 2 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="hardenberg_Beans"> 
  <block>
 <prompt>
-The price of Beans is today 4 schepjes</prompt>
+The price of Beans is today 4 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="hardenberg_Soja"> 
  <block>
 <prompt>
-The price of Soja is today 6 schepjes</prompt>
+The price of Soja is today 6 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="hardenberg_Papaver"> 
  <block>
 <prompt>
-The price of Papaver is today 4 schepjes</prompt>
+The price of Papaver is today 4 CEDI 
+</prompt>
 </block>
 </form>
-<form id="hoog caterijnen">
-<block> 
-<menu id="products_hoog caterijnen" dtmf="true">
+
+<menu id="hoog caterijnen" dtmf="true">
+<prompt>
+Select between Tomatoes Beans Soja Papaver 
+</prompt>
 <choice next="#hoog caterijnen_Tomatoes"/>
 <choice next="#hoog caterijnen_Beans"/>
 <choice next="#hoog caterijnen_Soja"/>
 <choice next="#hoog caterijnen_Papaver"/>
 </menu>
-</block> 
-</form>
-
 
 <form id="hoog caterijnen_Tomatoes"> 
  <block>
 <prompt>
-The price of Tomatoes is today 2 schepjes</prompt>
+The price of Tomatoes is today 2 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="hoog caterijnen_Beans"> 
  <block>
 <prompt>
-The price of Beans is today 5 schepjes</prompt>
+The price of Beans is today 5 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="hoog caterijnen_Soja"> 
  <block>
 <prompt>
-The price of Soja is today 6 schepjes</prompt>
+The price of Soja is today 6 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="hoog caterijnen_Papaver"> 
  <block>
 <prompt>
-The price of Papaver is today 1 schepjes</prompt>
+The price of Papaver is today 1 CEDI 
+</prompt>
 </block>
 </form>
-<form id="new york">
-<block> 
-<menu id="products_new york" dtmf="true">
+
+<menu id="new york" dtmf="true">
+<prompt>
+Select between Tomatoes Beans Soja Papaver 
+</prompt>
 <choice next="#new york_Tomatoes"/>
 <choice next="#new york_Beans"/>
 <choice next="#new york_Soja"/>
 <choice next="#new york_Papaver"/>
 </menu>
-</block> 
-</form>
-
 
 <form id="new york_Tomatoes"> 
  <block>
 <prompt>
-The price of Tomatoes is today 1 schepjes</prompt>
+The price of Tomatoes is today 1 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="new york_Beans"> 
  <block>
 <prompt>
-The price of Beans is today 3 schepjes</prompt>
+The price of Beans is today 3 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="new york_Soja"> 
  <block>
 <prompt>
-The price of Soja is today 6 schepjes</prompt>
+The price of Soja is today 6 CEDI 
+</prompt>
 </block>
 </form>
 
 <form id="new york_Papaver"> 
  <block>
 <prompt>
-The price of Papaver is today 5 schepjes</prompt>
+The price of Papaver is today 5 CEDI 
+</prompt>
 </block>
 </form>
+
 
  </vxml>
