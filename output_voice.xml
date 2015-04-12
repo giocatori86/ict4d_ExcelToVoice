@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <vxml version = "2.1" >
  <menu id="menu1" dtmf="true">
-<prompt>Select on of the following markets Amsterdam Utrecht Hilversum Amstelveen Den Haag Eindhoven deventer hardenberg hoog caterijnen new york </prompt>
+<prompt>Select on of the following markets 
+ 1.Amsterdam
+2.Utrecht
+3.Hilversum
+4.Amstelveen
+5.Den Haag
+6.Eindhoven
+7.deventer
+8.hardenberg
+9.hoog caterijnen
+10.new york
+</prompt>
 <choice next="#Amsterdam"/>
 <choice next="#Utrecht"/>
 <choice next="#Hilversum"/>
@@ -16,7 +27,12 @@
 
 <menu id="Amsterdam" dtmf="true">
 <prompt>
-Select between Tomatoes Beans Soja Papaver 
+Select between 
+ 1.Tomatoes
+2.Beans
+3.Soja
+4.Papaver
+
 </prompt>
 <choice next="#Amsterdam_Tomatoes"/>
 <choice next="#Amsterdam_Beans"/>
@@ -58,7 +74,12 @@ The price of Papaver is today 1 CEDI
 
 <menu id="Utrecht" dtmf="true">
 <prompt>
-Select between Tomatoes Beans Soja Papaver 
+Select between 
+ 1.Tomatoes
+2.Beans
+3.Soja
+4.Papaver
+
 </prompt>
 <choice next="#Utrecht_Tomatoes"/>
 <choice next="#Utrecht_Beans"/>
@@ -100,7 +121,12 @@ The price of Papaver is today 3 CEDI
 
 <menu id="Hilversum" dtmf="true">
 <prompt>
-Select between Tomatoes Beans Soja Papaver 
+Select between 
+ 1.Tomatoes
+2.Beans
+3.Soja
+4.Papaver
+
 </prompt>
 <choice next="#Hilversum_Tomatoes"/>
 <choice next="#Hilversum_Beans"/>
@@ -142,7 +168,12 @@ The price of Papaver is today 4 CEDI
 
 <menu id="Amstelveen" dtmf="true">
 <prompt>
-Select between Tomatoes Beans Soja Papaver 
+Select between 
+ 1.Tomatoes
+2.Beans
+3.Soja
+4.Papaver
+
 </prompt>
 <choice next="#Amstelveen_Tomatoes"/>
 <choice next="#Amstelveen_Beans"/>
@@ -184,7 +215,12 @@ The price of Papaver is today 5 CEDI
 
 <menu id="Den Haag" dtmf="true">
 <prompt>
-Select between Tomatoes Beans Soja Papaver 
+Select between 
+ 1.Tomatoes
+2.Beans
+3.Soja
+4.Papaver
+
 </prompt>
 <choice next="#Den Haag_Tomatoes"/>
 <choice next="#Den Haag_Beans"/>
@@ -226,7 +262,12 @@ The price of Papaver is today 8 CEDI
 
 <menu id="Eindhoven" dtmf="true">
 <prompt>
-Select between Tomatoes Beans Soja Papaver 
+Select between 
+ 1.Tomatoes
+2.Beans
+3.Soja
+4.Papaver
+
 </prompt>
 <choice next="#Eindhoven_Tomatoes"/>
 <choice next="#Eindhoven_Beans"/>
@@ -268,7 +309,12 @@ The price of Papaver is today 9 CEDI
 
 <menu id="deventer" dtmf="true">
 <prompt>
-Select between Tomatoes Beans Soja Papaver 
+Select between 
+ 1.Tomatoes
+2.Beans
+3.Soja
+4.Papaver
+
 </prompt>
 <choice next="#deventer_Tomatoes"/>
 <choice next="#deventer_Beans"/>
@@ -310,7 +356,12 @@ The price of Papaver is today 1 CEDI
 
 <menu id="hardenberg" dtmf="true">
 <prompt>
-Select between Tomatoes Beans Soja Papaver 
+Select between 
+ 1.Tomatoes
+2.Beans
+3.Soja
+4.Papaver
+
 </prompt>
 <choice next="#hardenberg_Tomatoes"/>
 <choice next="#hardenberg_Beans"/>
@@ -352,7 +403,12 @@ The price of Papaver is today 4 CEDI
 
 <menu id="hoog caterijnen" dtmf="true">
 <prompt>
-Select between Tomatoes Beans Soja Papaver 
+Select between 
+ 1.Tomatoes
+2.Beans
+3.Soja
+4.Papaver
+
 </prompt>
 <choice next="#hoog caterijnen_Tomatoes"/>
 <choice next="#hoog caterijnen_Beans"/>
@@ -394,7 +450,12 @@ The price of Papaver is today 1 CEDI
 
 <menu id="new york" dtmf="true">
 <prompt>
-Select between Tomatoes Beans Soja Papaver 
+Select between 
+ 1.Tomatoes
+2.Beans
+3.Soja
+4.Papaver
+
 </prompt>
 <choice next="#new york_Tomatoes"/>
 <choice next="#new york_Beans"/>
