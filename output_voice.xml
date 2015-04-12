@@ -27,8 +27,8 @@
 
 <menu id="Amsterdam" dtmf="true">
 <prompt>
-Select between 
- 1.Tomatoes
+Select between
+1.Tomatoes
 2.Beans
 3.Soja
 4.Papaver
@@ -74,8 +74,8 @@ The price of Papaver is today 1 CEDI
 
 <menu id="Utrecht" dtmf="true">
 <prompt>
-Select between 
- 1.Tomatoes
+Select between
+1.Tomatoes
 2.Beans
 3.Soja
 4.Papaver
@@ -121,8 +121,8 @@ The price of Papaver is today 3 CEDI
 
 <menu id="Hilversum" dtmf="true">
 <prompt>
-Select between 
- 1.Tomatoes
+Select between
+1.Tomatoes
 2.Beans
 3.Soja
 4.Papaver
@@ -168,8 +168,8 @@ The price of Papaver is today 4 CEDI
 
 <menu id="Amstelveen" dtmf="true">
 <prompt>
-Select between 
- 1.Tomatoes
+Select between
+1.Tomatoes
 2.Beans
 3.Soja
 4.Papaver
@@ -215,8 +215,8 @@ The price of Papaver is today 5 CEDI
 
 <menu id="Den Haag" dtmf="true">
 <prompt>
-Select between 
- 1.Tomatoes
+Select between
+1.Tomatoes
 2.Beans
 3.Soja
 4.Papaver
@@ -262,8 +262,8 @@ The price of Papaver is today 8 CEDI
 
 <menu id="Eindhoven" dtmf="true">
 <prompt>
-Select between 
- 1.Tomatoes
+Select between
+1.Tomatoes
 2.Beans
 3.Soja
 4.Papaver
@@ -309,8 +309,8 @@ The price of Papaver is today 9 CEDI
 
 <menu id="deventer" dtmf="true">
 <prompt>
-Select between 
- 1.Tomatoes
+Select between
+1.Tomatoes
 2.Beans
 3.Soja
 4.Papaver
@@ -356,8 +356,8 @@ The price of Papaver is today 1 CEDI
 
 <menu id="hardenberg" dtmf="true">
 <prompt>
-Select between 
- 1.Tomatoes
+Select between
+1.Tomatoes
 2.Beans
 3.Soja
 4.Papaver
@@ -403,8 +403,8 @@ The price of Papaver is today 4 CEDI
 
 <menu id="hoog caterijnen" dtmf="true">
 <prompt>
-Select between 
- 1.Tomatoes
+Select between
+1.Tomatoes
 2.Beans
 3.Soja
 4.Papaver
@@ -450,8 +450,8 @@ The price of Papaver is today 1 CEDI
 
 <menu id="new york" dtmf="true">
 <prompt>
-Select between 
- 1.Tomatoes
+Select between
+1.Tomatoes
 2.Beans
 3.Soja
 4.Papaver

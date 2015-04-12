@@ -39,9 +39,9 @@ public class Ict4d {
 	static String MenuChoicesMarkets(Sheet sheet1,int column) {
 		Cell[] cell = sheet1.getColumn(column);
 		String StartPrompt ="<prompt>";
-		StartPrompt +="Select on of the following markets ";
+		StartPrompt +="Select on of the following markets \n ";
 		for(int i = column ; i < (sheet1.getColumn(column).length);i++) {	
-			StartPrompt +=cell[i].getContents() +" ";
+			StartPrompt += i+"."+cell[i].getContents() +"\n";
 		}
 		StartPrompt +="</prompt>\n";
 		Choices += StartPrompt;
@@ -58,9 +58,9 @@ public class Ict4d {
 		Cell[] cell2 = sheet1.getColumn(Row);
 		MenuChoicesProducts +=	"<menu id=\""+cell2[places].getContents()+ "\" dtmf=\"true\">\n";
 		MenuChoicesProducts += "<prompt>\n"
-		+ "Select between ";
+		+ "Select between\n";
 		for(int i = Row+1 ; i < (sheet1.getRow(Row).length);i++) {
-			MenuChoicesProducts += cell[i].getContents() +" ";	
+			MenuChoicesProducts +=  (i-1)+"."+cell[i].getContents() +"\n";	
 		}
 		MenuChoicesProducts += "\n</prompt>";
 		for(int i = Row+1 ; i < (sheet1.getRow(Row).length);i++) {
