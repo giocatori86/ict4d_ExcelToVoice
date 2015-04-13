@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <vxml version = "2.1" >
- <menu id="menu1" dtmf="true">
-<prompt>Select on of the following markets
+
+
+<menu id="menu1" dtmf="true">
+<prompt>
+Select one of the following markets
  <break size="medium"/>
 1.Amsterdam
 <break size="medium"/>
@@ -48,18 +51,18 @@ Select between
 <break size="medium"/>
 4.Papaver
 <break size="medium"/>
-
-</prompt>
+Or Select 5 to know all the prices</prompt>
 <choice next="#Amsterdam_Tomatoes"/>
 <choice next="#Amsterdam_Beans"/>
 <choice next="#Amsterdam_Soja"/>
 <choice next="#Amsterdam_Papaver"/>
+<choice next="#Amsterdam_All"/>
 </menu>
 
 <form id="Amsterdam_Tomatoes"> 
  <block>
 <prompt>
-The price of Tomatoes is today 2 CEDI 
+The price of Tomatoes for Monday, 13 April 2015 10:30 is 2 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -69,7 +72,7 @@ The price of Tomatoes is today 2 CEDI
 <form id="Amsterdam_Beans"> 
  <block>
 <prompt>
-The price of Beans is today 3 CEDI 
+The price of Beans for Monday, 13 April 2015 10:30 is 3 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -79,7 +82,7 @@ The price of Beans is today 3 CEDI
 <form id="Amsterdam_Soja"> 
  <block>
 <prompt>
-The price of Soja is today 8 CEDI 
+The price of Soja for Monday, 13 April 2015 10:30 is 8 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -89,7 +92,25 @@ The price of Soja is today 8 CEDI
 <form id="Amsterdam_Papaver"> 
  <block>
 <prompt>
-The price of Papaver is today 1 CEDI 
+The price of Papaver for Monday, 13 April 2015 10:30 is 1 CEDI 
+<break size="medium"/>
+</prompt>
+<goto next="#menu1"/>
+</block>
+</form>
+
+<form id="Amsterdam_All"> 
+ <block>
+<prompt>
+The Prices for Amsterdam at Monday, 13 April 2015 10:30 are 
+<break size="medium"/>
+Tomatoes is 2 CEDI 
+<break size="medium"/>
+Beans is 3 CEDI 
+<break size="medium"/>
+Soja is 8 CEDI 
+<break size="medium"/>
+Papaver is 1 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -108,18 +129,18 @@ Select between
 <break size="medium"/>
 4.Papaver
 <break size="medium"/>
-
-</prompt>
+Or Select 5 to know all the prices</prompt>
 <choice next="#Utrecht_Tomatoes"/>
 <choice next="#Utrecht_Beans"/>
 <choice next="#Utrecht_Soja"/>
 <choice next="#Utrecht_Papaver"/>
+<choice next="#Utrecht_All"/>
 </menu>
 
 <form id="Utrecht_Tomatoes"> 
  <block>
 <prompt>
-The price of Tomatoes is today 3 CEDI 
+The price of Tomatoes for Monday, 13 April 2015 10:30 is 3 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -129,7 +150,7 @@ The price of Tomatoes is today 3 CEDI
 <form id="Utrecht_Beans"> 
  <block>
 <prompt>
-The price of Beans is today 4 CEDI 
+The price of Beans for Monday, 13 April 2015 10:30 is 4 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -139,7 +160,7 @@ The price of Beans is today 4 CEDI
 <form id="Utrecht_Soja"> 
  <block>
 <prompt>
-The price of Soja is today 6 CEDI 
+The price of Soja for Monday, 13 April 2015 10:30 is 6 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -149,7 +170,25 @@ The price of Soja is today 6 CEDI
 <form id="Utrecht_Papaver"> 
  <block>
 <prompt>
-The price of Papaver is today 3 CEDI 
+The price of Papaver for Monday, 13 April 2015 10:30 is 3 CEDI 
+<break size="medium"/>
+</prompt>
+<goto next="#menu1"/>
+</block>
+</form>
+
+<form id="Utrecht_All"> 
+ <block>
+<prompt>
+The Prices for Utrecht at Monday, 13 April 2015 10:30 are 
+<break size="medium"/>
+Tomatoes is 3 CEDI 
+<break size="medium"/>
+Beans is 4 CEDI 
+<break size="medium"/>
+Soja is 6 CEDI 
+<break size="medium"/>
+Papaver is 3 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -168,18 +207,18 @@ Select between
 <break size="medium"/>
 4.Papaver
 <break size="medium"/>
-
-</prompt>
+Or Select 5 to know all the prices</prompt>
 <choice next="#Hilversum_Tomatoes"/>
 <choice next="#Hilversum_Beans"/>
 <choice next="#Hilversum_Soja"/>
 <choice next="#Hilversum_Papaver"/>
+<choice next="#Hilversum_All"/>
 </menu>
 
 <form id="Hilversum_Tomatoes"> 
  <block>
 <prompt>
-The price of Tomatoes is today 4 CEDI 
+The price of Tomatoes for Monday, 13 April 2015 10:30 is 4 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -189,7 +228,7 @@ The price of Tomatoes is today 4 CEDI
 <form id="Hilversum_Beans"> 
  <block>
 <prompt>
-The price of Beans is today 5 CEDI 
+The price of Beans for Monday, 13 April 2015 10:30 is 5 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -199,7 +238,7 @@ The price of Beans is today 5 CEDI
 <form id="Hilversum_Soja"> 
  <block>
 <prompt>
-The price of Soja is today 5 CEDI 
+The price of Soja for Monday, 13 April 2015 10:30 is 5 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -209,7 +248,25 @@ The price of Soja is today 5 CEDI
 <form id="Hilversum_Papaver"> 
  <block>
 <prompt>
-The price of Papaver is today 4 CEDI 
+The price of Papaver for Monday, 13 April 2015 10:30 is 4 CEDI 
+<break size="medium"/>
+</prompt>
+<goto next="#menu1"/>
+</block>
+</form>
+
+<form id="Hilversum_All"> 
+ <block>
+<prompt>
+The Prices for Hilversum at Monday, 13 April 2015 10:30 are 
+<break size="medium"/>
+Tomatoes is 4 CEDI 
+<break size="medium"/>
+Beans is 5 CEDI 
+<break size="medium"/>
+Soja is 5 CEDI 
+<break size="medium"/>
+Papaver is 4 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -228,18 +285,18 @@ Select between
 <break size="medium"/>
 4.Papaver
 <break size="medium"/>
-
-</prompt>
+Or Select 5 to know all the prices</prompt>
 <choice next="#Amstelveen_Tomatoes"/>
 <choice next="#Amstelveen_Beans"/>
 <choice next="#Amstelveen_Soja"/>
 <choice next="#Amstelveen_Papaver"/>
+<choice next="#Amstelveen_All"/>
 </menu>
 
 <form id="Amstelveen_Tomatoes"> 
  <block>
 <prompt>
-The price of Tomatoes is today 5 CEDI 
+The price of Tomatoes for Monday, 13 April 2015 10:30 is 5 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -249,7 +306,7 @@ The price of Tomatoes is today 5 CEDI
 <form id="Amstelveen_Beans"> 
  <block>
 <prompt>
-The price of Beans is today 6 CEDI 
+The price of Beans for Monday, 13 April 2015 10:30 is 6 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -259,7 +316,7 @@ The price of Beans is today 6 CEDI
 <form id="Amstelveen_Soja"> 
  <block>
 <prompt>
-The price of Soja is today 4 CEDI 
+The price of Soja for Monday, 13 April 2015 10:30 is 4 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -269,7 +326,25 @@ The price of Soja is today 4 CEDI
 <form id="Amstelveen_Papaver"> 
  <block>
 <prompt>
-The price of Papaver is today 5 CEDI 
+The price of Papaver for Monday, 13 April 2015 10:30 is 5 CEDI 
+<break size="medium"/>
+</prompt>
+<goto next="#menu1"/>
+</block>
+</form>
+
+<form id="Amstelveen_All"> 
+ <block>
+<prompt>
+The Prices for Amstelveen at Monday, 13 April 2015 10:30 are 
+<break size="medium"/>
+Tomatoes is 5 CEDI 
+<break size="medium"/>
+Beans is 6 CEDI 
+<break size="medium"/>
+Soja is 4 CEDI 
+<break size="medium"/>
+Papaver is 5 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -288,18 +363,18 @@ Select between
 <break size="medium"/>
 4.Papaver
 <break size="medium"/>
-
-</prompt>
+Or Select 5 to know all the prices</prompt>
 <choice next="#Den Haag_Tomatoes"/>
 <choice next="#Den Haag_Beans"/>
 <choice next="#Den Haag_Soja"/>
 <choice next="#Den Haag_Papaver"/>
+<choice next="#Den Haag_All"/>
 </menu>
 
 <form id="Den Haag_Tomatoes"> 
  <block>
 <prompt>
-The price of Tomatoes is today 3 CEDI 
+The price of Tomatoes for Monday, 13 April 2015 10:30 is 3 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -309,7 +384,7 @@ The price of Tomatoes is today 3 CEDI
 <form id="Den Haag_Beans"> 
  <block>
 <prompt>
-The price of Beans is today 2 CEDI 
+The price of Beans for Monday, 13 April 2015 10:30 is 2 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -319,7 +394,7 @@ The price of Beans is today 2 CEDI
 <form id="Den Haag_Soja"> 
  <block>
 <prompt>
-The price of Soja is today 6 CEDI 
+The price of Soja for Monday, 13 April 2015 10:30 is 6 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -329,7 +404,25 @@ The price of Soja is today 6 CEDI
 <form id="Den Haag_Papaver"> 
  <block>
 <prompt>
-The price of Papaver is today 8 CEDI 
+The price of Papaver for Monday, 13 April 2015 10:30 is 8 CEDI 
+<break size="medium"/>
+</prompt>
+<goto next="#menu1"/>
+</block>
+</form>
+
+<form id="Den Haag_All"> 
+ <block>
+<prompt>
+The Prices for Den Haag at Monday, 13 April 2015 10:30 are 
+<break size="medium"/>
+Tomatoes is 3 CEDI 
+<break size="medium"/>
+Beans is 2 CEDI 
+<break size="medium"/>
+Soja is 6 CEDI 
+<break size="medium"/>
+Papaver is 8 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -348,18 +441,18 @@ Select between
 <break size="medium"/>
 4.Papaver
 <break size="medium"/>
-
-</prompt>
+Or Select 5 to know all the prices</prompt>
 <choice next="#Eindhoven_Tomatoes"/>
 <choice next="#Eindhoven_Beans"/>
 <choice next="#Eindhoven_Soja"/>
 <choice next="#Eindhoven_Papaver"/>
+<choice next="#Eindhoven_All"/>
 </menu>
 
 <form id="Eindhoven_Tomatoes"> 
  <block>
 <prompt>
-The price of Tomatoes is today 4 CEDI 
+The price of Tomatoes for Monday, 13 April 2015 10:30 is 4 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -369,7 +462,7 @@ The price of Tomatoes is today 4 CEDI
 <form id="Eindhoven_Beans"> 
  <block>
 <prompt>
-The price of Beans is today 2 CEDI 
+The price of Beans for Monday, 13 April 2015 10:30 is 2 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -379,7 +472,7 @@ The price of Beans is today 2 CEDI
 <form id="Eindhoven_Soja"> 
  <block>
 <prompt>
-The price of Soja is today 3 CEDI 
+The price of Soja for Monday, 13 April 2015 10:30 is 3 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -389,7 +482,25 @@ The price of Soja is today 3 CEDI
 <form id="Eindhoven_Papaver"> 
  <block>
 <prompt>
-The price of Papaver is today 9 CEDI 
+The price of Papaver for Monday, 13 April 2015 10:30 is 9 CEDI 
+<break size="medium"/>
+</prompt>
+<goto next="#menu1"/>
+</block>
+</form>
+
+<form id="Eindhoven_All"> 
+ <block>
+<prompt>
+The Prices for Eindhoven at Monday, 13 April 2015 10:30 are 
+<break size="medium"/>
+Tomatoes is 4 CEDI 
+<break size="medium"/>
+Beans is 2 CEDI 
+<break size="medium"/>
+Soja is 3 CEDI 
+<break size="medium"/>
+Papaver is 9 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -408,18 +519,18 @@ Select between
 <break size="medium"/>
 4.Papaver
 <break size="medium"/>
-
-</prompt>
+Or Select 5 to know all the prices</prompt>
 <choice next="#deventer_Tomatoes"/>
 <choice next="#deventer_Beans"/>
 <choice next="#deventer_Soja"/>
 <choice next="#deventer_Papaver"/>
+<choice next="#deventer_All"/>
 </menu>
 
 <form id="deventer_Tomatoes"> 
  <block>
 <prompt>
-The price of Tomatoes is today 1 CEDI 
+The price of Tomatoes for Monday, 13 April 2015 10:30 is 1 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -429,7 +540,7 @@ The price of Tomatoes is today 1 CEDI
 <form id="deventer_Beans"> 
  <block>
 <prompt>
-The price of Beans is today 2 CEDI 
+The price of Beans for Monday, 13 April 2015 10:30 is 2 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -439,7 +550,7 @@ The price of Beans is today 2 CEDI
 <form id="deventer_Soja"> 
  <block>
 <prompt>
-The price of Soja is today 78 CEDI 
+The price of Soja for Monday, 13 April 2015 10:30 is 78 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -449,7 +560,25 @@ The price of Soja is today 78 CEDI
 <form id="deventer_Papaver"> 
  <block>
 <prompt>
-The price of Papaver is today 1 CEDI 
+The price of Papaver for Monday, 13 April 2015 10:30 is 1 CEDI 
+<break size="medium"/>
+</prompt>
+<goto next="#menu1"/>
+</block>
+</form>
+
+<form id="deventer_All"> 
+ <block>
+<prompt>
+The Prices for deventer at Monday, 13 April 2015 10:30 are 
+<break size="medium"/>
+Tomatoes is 1 CEDI 
+<break size="medium"/>
+Beans is 2 CEDI 
+<break size="medium"/>
+Soja is 78 CEDI 
+<break size="medium"/>
+Papaver is 1 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -468,18 +597,18 @@ Select between
 <break size="medium"/>
 4.Papaver
 <break size="medium"/>
-
-</prompt>
+Or Select 5 to know all the prices</prompt>
 <choice next="#hardenberg_Tomatoes"/>
 <choice next="#hardenberg_Beans"/>
 <choice next="#hardenberg_Soja"/>
 <choice next="#hardenberg_Papaver"/>
+<choice next="#hardenberg_All"/>
 </menu>
 
 <form id="hardenberg_Tomatoes"> 
  <block>
 <prompt>
-The price of Tomatoes is today 2 CEDI 
+The price of Tomatoes for Monday, 13 April 2015 10:30 is 2 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -489,7 +618,7 @@ The price of Tomatoes is today 2 CEDI
 <form id="hardenberg_Beans"> 
  <block>
 <prompt>
-The price of Beans is today 4 CEDI 
+The price of Beans for Monday, 13 April 2015 10:30 is 4 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -499,7 +628,7 @@ The price of Beans is today 4 CEDI
 <form id="hardenberg_Soja"> 
  <block>
 <prompt>
-The price of Soja is today 6 CEDI 
+The price of Soja for Monday, 13 April 2015 10:30 is 6 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -509,7 +638,25 @@ The price of Soja is today 6 CEDI
 <form id="hardenberg_Papaver"> 
  <block>
 <prompt>
-The price of Papaver is today 4 CEDI 
+The price of Papaver for Monday, 13 April 2015 10:30 is 4 CEDI 
+<break size="medium"/>
+</prompt>
+<goto next="#menu1"/>
+</block>
+</form>
+
+<form id="hardenberg_All"> 
+ <block>
+<prompt>
+The Prices for hardenberg at Monday, 13 April 2015 10:30 are 
+<break size="medium"/>
+Tomatoes is 2 CEDI 
+<break size="medium"/>
+Beans is 4 CEDI 
+<break size="medium"/>
+Soja is 6 CEDI 
+<break size="medium"/>
+Papaver is 4 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -528,18 +675,18 @@ Select between
 <break size="medium"/>
 4.Papaver
 <break size="medium"/>
-
-</prompt>
+Or Select 5 to know all the prices</prompt>
 <choice next="#hoog caterijnen_Tomatoes"/>
 <choice next="#hoog caterijnen_Beans"/>
 <choice next="#hoog caterijnen_Soja"/>
 <choice next="#hoog caterijnen_Papaver"/>
+<choice next="#hoog caterijnen_All"/>
 </menu>
 
 <form id="hoog caterijnen_Tomatoes"> 
  <block>
 <prompt>
-The price of Tomatoes is today 2 CEDI 
+The price of Tomatoes for Monday, 13 April 2015 10:30 is 2 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -549,7 +696,7 @@ The price of Tomatoes is today 2 CEDI
 <form id="hoog caterijnen_Beans"> 
  <block>
 <prompt>
-The price of Beans is today 5 CEDI 
+The price of Beans for Monday, 13 April 2015 10:30 is 5 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -559,7 +706,7 @@ The price of Beans is today 5 CEDI
 <form id="hoog caterijnen_Soja"> 
  <block>
 <prompt>
-The price of Soja is today 6 CEDI 
+The price of Soja for Monday, 13 April 2015 10:30 is 6 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -569,7 +716,25 @@ The price of Soja is today 6 CEDI
 <form id="hoog caterijnen_Papaver"> 
  <block>
 <prompt>
-The price of Papaver is today 1 CEDI 
+The price of Papaver for Monday, 13 April 2015 10:30 is 1 CEDI 
+<break size="medium"/>
+</prompt>
+<goto next="#menu1"/>
+</block>
+</form>
+
+<form id="hoog caterijnen_All"> 
+ <block>
+<prompt>
+The Prices for hoog caterijnen at Monday, 13 April 2015 10:30 are 
+<break size="medium"/>
+Tomatoes is 2 CEDI 
+<break size="medium"/>
+Beans is 5 CEDI 
+<break size="medium"/>
+Soja is 6 CEDI 
+<break size="medium"/>
+Papaver is 1 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -588,18 +753,18 @@ Select between
 <break size="medium"/>
 4.Papaver
 <break size="medium"/>
-
-</prompt>
+Or Select 5 to know all the prices</prompt>
 <choice next="#new york_Tomatoes"/>
 <choice next="#new york_Beans"/>
 <choice next="#new york_Soja"/>
 <choice next="#new york_Papaver"/>
+<choice next="#new york_All"/>
 </menu>
 
 <form id="new york_Tomatoes"> 
  <block>
 <prompt>
-The price of Tomatoes is today 1 CEDI 
+The price of Tomatoes for Monday, 13 April 2015 10:30 is 1 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -609,7 +774,7 @@ The price of Tomatoes is today 1 CEDI
 <form id="new york_Beans"> 
  <block>
 <prompt>
-The price of Beans is today 3 CEDI 
+The price of Beans for Monday, 13 April 2015 10:30 is 3 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -619,7 +784,7 @@ The price of Beans is today 3 CEDI
 <form id="new york_Soja"> 
  <block>
 <prompt>
-The price of Soja is today 6 CEDI 
+The price of Soja for Monday, 13 April 2015 10:30 is 6 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
@@ -629,7 +794,25 @@ The price of Soja is today 6 CEDI
 <form id="new york_Papaver"> 
  <block>
 <prompt>
-The price of Papaver is today 5 CEDI 
+The price of Papaver for Monday, 13 April 2015 10:30 is 5 CEDI 
+<break size="medium"/>
+</prompt>
+<goto next="#menu1"/>
+</block>
+</form>
+
+<form id="new york_All"> 
+ <block>
+<prompt>
+The Prices for new york at Monday, 13 April 2015 10:30 are 
+<break size="medium"/>
+Tomatoes is 1 CEDI 
+<break size="medium"/>
+Beans is 3 CEDI 
+<break size="medium"/>
+Soja is 6 CEDI 
+<break size="medium"/>
+Papaver is 5 CEDI 
 <break size="medium"/>
 </prompt>
 <goto next="#menu1"/>
