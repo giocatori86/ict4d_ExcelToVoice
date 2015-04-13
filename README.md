@@ -1,8 +1,8 @@
 # ICT4D ; A interactive marketprice system for Ghanianian Farmers
 
-ExcellingMarkets is a Voicebased marketsystem for Ghanianian farmers to know the prices of their crops for that day.
+Excelling Markets is a Voice Based market system for Ghanaian farmers to know the prices of their crops for that day.
 
-  - Excel To Read in prices of all the markets in excelfile.
+  - Excel To Read in prices of all the markets in excel file.
   - Convert it to VXML
   - Load in into a Text to Speech system that handles VXML
 
