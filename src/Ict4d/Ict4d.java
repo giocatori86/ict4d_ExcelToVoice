@@ -119,7 +119,7 @@ public class Ict4d {
 					//
 					//
 					// construct the date String
-					//{{name of day},{day number} {month} {year} {hour} {minute} }
+					//	{{name of day},{day number} {month} {year} {hour} {minute} }
 					//
 					//
 		
@@ -181,7 +181,7 @@ public class Ict4d {
 
 	static void makeVXML(Sheet sheet1) throws IOException, RowsExceededException, WriteException {
 		
-					//	 Creates VXML
+					//	Creates VXML
 					//	
 					//	Makes new output object ("/Users/Sander/Desktop/output_voice.xml)
 					//	
