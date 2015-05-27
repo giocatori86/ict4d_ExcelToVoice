@@ -3,17 +3,15 @@ package Ict4d;
 import jxl.*;
 import jxl.read.biff.BiffException;
 import jxl.write.*;
-import jxl.write.Number;
 import jxl.write.biff.RowsExceededException;
-
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Locale;
+import jxl.write.Label;
+
+
+
 
 public class Ict4d {
 
@@ -25,15 +23,26 @@ public class Ict4d {
 	
 	final static int ROW = 1; 
 	final static String BREAKSIZE = "medium";
+	final static double min = 0.6;
+	final static double max = 2;
 	
 	Ict4d() throws BiffException, IOException, RowsExceededException, WriteException {
 		
 		            //	Create a workbook object from the file at specified location.
 		            //	Change the path of the file as per the location on your computer.
 					//	Calls the VXML Class
-		Workbook wrk1 =  Workbook.getWorkbook(new File("/Users/Sander/Desktop/market.xls"));
+					// 	copy all changes market_old
+					// 	close market_old
+		Workbook wrk1 =  Workbook.getWorkbook(new File("/Users/Sander/Desktop/ict4d/market.xls"));
+		Workbook checkBook = Workbook.getWorkbook(new File("/Users/Sander/Desktop/ict4d/market_old.xls"));
+		WritableWorkbook copy = Workbook.createWorkbook(new File("/Users/Sander/Desktop/ict4d/market_old.xls"), checkBook);
+		Sheet check = checkBook.getSheet(0);
 		Sheet sheet1 = wrk1.getSheet(0);
-		makeVXML(sheet1);      	
+		WritableSheet checkWrite = copy.getSheet(0);
+		makeVXML(sheet1,check,checkWrite); 
+		copy.write();
+		copy.close();
+		checkBook.close();
 	}
 	
 	static String MenuChoicesMarkets(Sheet sheet1,int column) {
@@ -114,24 +123,16 @@ public class Ict4d {
 		return MenuChoicesProducts;
 	}
 
-	
-	static String Date () {
-					//
-					//
-					// construct the date String
-					//	{{name of day},{day number} {month} {year} {hour} {minute} }
-					//
-					//
-		
-		Date now = new Date(); 
-		String Date = new SimpleDateFormat("EEEE, d MMMM yyyy HH:mm",Locale.ENGLISH).format(now);
-		
-		return Date;
+	public static boolean isBetween(double value)
+	{
+	  return((value > min) && (value < max));
 	}
-	
-	static String getPricesMarkets(Sheet sheet1,int Row, int places) {
+
+		
+	static String getPricesMarkets(Sheet sheet1,Sheet check,WritableSheet checkWrite,int Row, int places) throws RowsExceededException, WriteException {
 					//	 Creates the form for market prices
 					//	
+					//	Check for the price is between maximum and minimum change.
 					//	Fetch in a FOR loop all the market prices in a form structure {
 					//	
 					// 	<form id ="{{name of market_{name of product / or All}}">
@@ -142,46 +143,67 @@ public class Ict4d {
 					//	</prompt>
 					//	<goto next = "#{name of main menu}"/>
 					//	</block>
-					//	</form>
+					//	</formi
 					// }
 					// 
 		Cell[] cell = sheet1.getRow(0);
 		Cell[] cell2 = sheet1.getColumn(Row);
 		Cell[] cell3 = sheet1.getRow(places);
-		String date = Date();
+		Cell[] checkCell = check.getRow(places);
+		WritableCell writablecell;
+		
+		
 		String getPricesMarkets = "";
 		String getPricesAllMarkets="\n<form id=\""+cell2[places].getContents()+ "_All\"> \n" 
-		+" <block>\n"
-		+"<prompt>\n"
-		+"The Prices for "+cell2[places].getContents()+" at " +date+ " are \n"
-		+ "<break size=\""+BREAKSIZE+"\"/>\n";
+				+" <block>\n"
+				+"<prompt>\n"
+				+"The Prices for "+cell2[places].getContents()+" are \n"
+				+ "<break size=\""+BREAKSIZE+"\"/>\n";
 		
 		String End = "</prompt>\n"	
 		+"<goto next=\"#menu1\"/>\n"	
 		+"</block>\n" 
 		+ "</form>\n";
 		
-		
 		for(int i = Row+1 ; i < (sheet1.getRow(Row).length);i++) {
 			String Begin = "\n<form id=\""+cell2[places].getContents()+ "_" +cell[i].getContents()+"\"> \n" 
 			+" <block>\n"
 			+"<prompt>\n"; 
 			getPricesMarkets += Begin; 
-			getPricesMarkets +="The price of "+cell[i].getContents()+" for "+date+" is "+ cell3[i].getContents() +" CEDI \n"
-			+ "<break size=\""+BREAKSIZE+"\"/>\n";
-			getPricesAllMarkets += cell[i].getContents()+" is " + cell3[i].getContents() +" CEDI \n"
-			+ "<break size=\""+BREAKSIZE+"\"/>\n";
+			
+			if(isBetween(((Double.parseDouble(cell3[i].getContents())))/(Double.parseDouble(checkCell[i].getContents()))))
+			{				
+				Label l = new Label(i,places, cell3[i].getContents());
+				writablecell = (WritableCell) l;
+				checkWrite.addCell(writablecell);
+			
+				getPricesMarkets +="The price of "+cell[i].getContents()+"is "+ cell3[i].getContents() +" CEDI \n"
+						+ "<break size=\""+BREAKSIZE+"\"/>\n";
+				getPricesAllMarkets += cell[i].getContents()+" is " + cell3[i].getContents() +" CEDI \n"
+						+ "<break size=\""+BREAKSIZE+"\"/>\n";
+			}
+			else {
+				System.out.println("The price of "+cell[i].getContents()+" in "+cell2[places].getContents()+" is not within the margin");
+				Label l = new Label(i,places, checkCell[i].getContents());
+				writablecell = (WritableCell) l;
+				checkWrite.addCell(writablecell);
+				
+				getPricesMarkets +="The price of "+cell[i].getContents()+"is "+ checkCell[i].getContents() +" CEDI \n"
+						+ "<break size=\""+BREAKSIZE+"\"/>\n";
+				getPricesAllMarkets += cell[i].getContents()+" is " + checkCell[i].getContents() +" CEDI \n"
+						+ "<break size=\""+BREAKSIZE+"\"/>\n";
+			}	
 			getPricesMarkets+= End;		
 		}
-		getPricesAllMarkets +=End;
-		getPricesMarkets +=getPricesAllMarkets;
-		
+			getPricesAllMarkets +=End;
+			getPricesMarkets +=getPricesAllMarkets;
+			
 		return getPricesMarkets;
 	}
 
-	static void makeVXML(Sheet sheet1) throws IOException, RowsExceededException, WriteException {
+	static void makeVXML(Sheet sheet1,Sheet check,WritableSheet checkWrite) throws IOException, RowsExceededException, WriteException {
 		
-					//	Creates VXML
+					//	 Creates VXML
 					//	
 					//	Makes new output object ("/Users/Sander/Desktop/output_voice.xml)
 					//	
@@ -195,8 +217,7 @@ public class Ict4d {
 					//	Close document
 					//
 					//
-		
-		PrintWriter out = new PrintWriter(new FileWriter("/Users/Sander/Desktop/output_voice.xml", false), true);
+		PrintWriter out = new PrintWriter(new FileWriter("/Users/Sander/Desktop/ict4d/output_voice.xml", false), true);
 		String VXML ="";
 		String Begin = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
 		+ "<vxml version = \"2.1\" >\n\n\n"
@@ -206,13 +227,17 @@ public class Ict4d {
 		VXML +=MenuChoicesMarkets(sheet1,ROW);
 		for(int i = 1 ; i < (sheet1.getColumn(ROW).length);i++){	
 			VXML +=	menuChoicesProducts(sheet1,ROW,i);
-			VXML += getPricesMarkets(sheet1,ROW,i);
+			VXML += getPricesMarkets(sheet1,check,checkWrite,ROW,i);
 			VXML +="\n";
 		}
 		VXML += End;
 		out.write(VXML);
-		out.close();	 
+		out.close();	
+		
+		
 	}
+	
+
 	void start() {	
 	}
 	public static void main(String[] args) throws BiffException, IOException, RowsExceededException, WriteException {
